@@ -1,0 +1,1 @@
+PODS_GUESSWHATTIYTEAMPROJECT_AMAZONS_REQUESTMANAGER_OTHER_LDFLAGS = -framework "Foundation" -framework "MobileCoreServices"

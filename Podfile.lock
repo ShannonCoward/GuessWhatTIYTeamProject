@@ -1,0 +1,25 @@
+PODS:
+  - AFAmazonS3Manager (3.2.1):
+    - AFNetworking/NSURLConnection (~> 2.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - Alamofire (1.2.3)
+  - AmazonS3RequestManager (0.5.0):
+    - Alamofire (~> 1.2)
+
+DEPENDENCIES:
+  - AFAmazonS3Manager (~> 3.2)
+  - AmazonS3RequestManager (~> 0.5)
+
+SPEC CHECKSUMS:
+  AFAmazonS3Manager: 688f9238511bb86011159d0155fcda09838b0e0d
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  AmazonS3RequestManager: b283046bd146912898508557b4b8f0256ff907ca
+
+COCOAPODS: 0.37.1

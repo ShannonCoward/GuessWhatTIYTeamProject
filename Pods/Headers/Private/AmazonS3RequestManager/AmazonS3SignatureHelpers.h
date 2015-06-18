@@ -1,0 +1,1 @@
+../../../AmazonS3RequestManager/AmazonS3RequestManager/AmazonS3SignatureHelpers.h

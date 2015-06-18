@@ -1,0 +1,6 @@
+framework module Pods_GuessWhatTIYTeamProject {
+  umbrella header "Pods-GuessWhatTIYTeamProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

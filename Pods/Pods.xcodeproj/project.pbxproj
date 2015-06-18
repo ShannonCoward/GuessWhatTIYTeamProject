@@ -1,0 +1,1183 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D0CFAC64957711EF55ABDE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = DF44AD24CB63C2DCC1491162 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057C8AB06D34FE022E4914CE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5BF0D841F201095ECAB188 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09475F304BEB7459032E744C /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63989843F32CC7E4F10953F6 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FB42BBAE045833CEFDB7554 /* AmazonS3SignatureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 827771BF0DE1ED7FC2610191 /* AmazonS3SignatureHelpers.m */; };
+		1377BCB650EE7808091D499F /* AFAmazonS3ResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6611A0F64514C7536DBAAAB /* AFAmazonS3ResponseSerializer.m */; };
+		1792DFE32B459B6C836F3F4E /* AmazonS3RequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 933FF21994AEA6DD37F2C158 /* AmazonS3RequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19763DBC816918CBE52CC4F9 /* AFAmazonS3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C6B6B6312A86E2764E0BC7 /* AFAmazonS3Manager.m */; };
+		197A037E41DCF2F53DDC125E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478C930C0FEE68F03B563A /* Foundation.framework */; };
+		2128A1A3DEC146661A421AB5 /* Pods-GuessWhatTIYTeamProject-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCA6D16FD76CDD612FA0BC /* Pods-GuessWhatTIYTeamProject-AFNetworking-dummy.m */; };
+		2331BD4FA0A6E33D881085A0 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DEF621C5A353801991B976 /* AFNetworkReachabilityManager.m */; };
+		2691078DC5064DA13210D190 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2297415CC6E8608872E8BB11 /* AFHTTPRequestOperationManager.m */; };
+		28C88FEC8B7DC09496DFB02A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478C930C0FEE68F03B563A /* Foundation.framework */; };
+		2D34CA43E71CB76C192F6E9E /* AmazonS3ACL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D5A31BE627ADBB242F423 /* AmazonS3ACL.swift */; };
+		35BF6713A942A0AB0000FAC0 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71CE076C22128DEEA7B5EE9 /* AFNetworking.framework */; };
+		381D7D22511EFE4CA95AE855 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF969C5FD562E420F969FDB /* ResponseSerialization.swift */; };
+		432F62D75B38D2F603EF16EE /* Pods-GuessWhatTIYTeamProject-AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8960A05CD5A6AB2B62F2FE /* Pods-GuessWhatTIYTeamProject-AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48EE839BF49EA1D10831F5A6 /* Pods-GuessWhatTIYTeamProject-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC20E860E094B846BD02286 /* Pods-GuessWhatTIYTeamProject-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BB15D4FF022BBD1516F8BF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478C930C0FEE68F03B563A /* Foundation.framework */; };
+		4F81DEBDEAA1DB90601F7D35 /* AFAmazonS3RequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6656C87B54E8BE2137353D32 /* AFAmazonS3RequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5074D9E3073987AAB80EB56C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272D9D7F59D95E08C39DB020 /* MobileCoreServices.framework */; };
+		535D3F7EFFAF5FD474AFD0D1 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18DFDCFE089896511917A428 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58912D23AB7AD9C92CE8FC86 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD5CE51369620F8E4A78012 /* AFURLConnectionOperation.m */; };
+		5E187428EB695BD54555B5A3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0D4433842F014594AD63C /* AFSecurityPolicy.m */; };
+		69437DAE50B0492C917274B7 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 092BD53EF55AF880282804A9 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7202DA99609271418350F8A0 /* AmazonS3RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6103E9F452FF37BA672ECDCF /* AmazonS3RequestManager.swift */; };
+		7B36470F1492630E4A183AE0 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B9BD43C15BA766C0C83303 /* Manager.swift */; };
+		83B25BAC3C1F6AE39E5EBA46 /* Pods-GuessWhatTIYTeamProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4551D74F17BE9F7B277B19DA /* Pods-GuessWhatTIYTeamProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85C6F736B9DF8F102C55B12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478C930C0FEE68F03B563A /* Foundation.framework */; };
+		8CD36C85E9474CB660BEDCE4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B88A191C53DD7A0F334D7 /* Validation.swift */; };
+		8D8708376F93E5E572BF47DD /* AFAmazonS3ResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCA8CDC45FCF2C9DB07DD96 /* AFAmazonS3ResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D98D33FDC1F2A0718DBCDD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0022474C77126ACDCC7E14EF /* CoreGraphics.framework */; };
+		8EE020E0B70EE170FB885595 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397AE73529A7BDBD40A1FFAE /* SystemConfiguration.framework */; };
+		90215528718C67BA849D6436 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F684F62E7CCF9D0694A1F6 /* ParameterEncoding.swift */; };
+		9487E70021AA351507B298D4 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 160522700F28778704FF389D /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		978DD5AB06DF80545D640CE5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5A142DCC3C10BAA9BCF86 /* AFHTTPRequestOperation.m */; };
+		9ACE4C2544DE50B37CD4C695 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 631EB60B78C4DFB400B13A9F /* AFURLResponseSerialization.m */; };
+		9DD033CD8408DB1DB5021B7F /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB49EDC6CBEF729661FA438 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F44DE1C80B41602A5CBB91E /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E783A802A5B6F70701605 /* Upload.swift */; };
+		A3617FC45A46EBB9B1D6C855 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9213B84D7A11F070AB02 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-dummy.m */; };
+		A6C58B596F981BD7E09EE0B1 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1044518CBFDF6432F8FFEF62 /* Alamofire.swift */; };
+		AB6F2BB157C79F9A36153FA1 /* Pods-GuessWhatTIYTeamProject-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF3DD0D96FC38241CB18CC /* Pods-GuessWhatTIYTeamProject-Alamofire-dummy.m */; };
+		B069F474F4AD6E6E83FB6FAC /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A818FC5552513A560F90BB5 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0700F27C36F1D4800B3D234 /* AFAmazonS3Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F0BAC74850EDE69FBEE2A0 /* AFAmazonS3Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F8F0E2B60B3BE243CD21B0 /* Pods-GuessWhatTIYTeamProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9990520A1505C490B6C3C3C2 /* Pods-GuessWhatTIYTeamProject-dummy.m */; };
+		C7C1846F0CEF17134F248590 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E58E9679BC254B88E41BC5 /* Download.swift */; };
+		CA1747798B09F2BE35E7465B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81478C930C0FEE68F03B563A /* Foundation.framework */; };
+		CD1A767BF73DC4EE259B0967 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272D9D7F59D95E08C39DB020 /* MobileCoreServices.framework */; };
+		D367ABA1CBFA54E8DDDF5B52 /* AmazonS3SignatureHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 99AE5C74DD8428A06780B37F /* AmazonS3SignatureHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D856181B880FA8DCE6D176ED /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E3390237450B674D53D6BB /* AFURLRequestSerialization.m */; };
+		D9381194B2EE5B04B9090674 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB232C8B5BEC102C121B094 /* Security.framework */; };
+		DE229B2F5F99E717B2D0250E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA162AF0C23F249E43B4BF /* Request.swift */; };
+		E4823435EE17B9EB4F24F915 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB724C391C2BFE6373F3E59F /* Alamofire.framework */; };
+		FD99CB5F7AFF879ACC5D305E /* AFAmazonS3RequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 561ACD95E7EE8B71F31FEED4 /* AFAmazonS3RequestSerializer.m */; };
+		FE98FCE20ADC9DF734300B4F /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F28E72E352832E0492747F86 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF0BB5D066995F22F2713610 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E637EC19A20657755EEBD3 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07CF7918F6F5302A5078B267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 675F3DDBE7308B8B6772CA48;
+			remoteInfo = "Pods-GuessWhatTIYTeamProject-Alamofire";
+		};
+		22E3F8C719FAF6B7B54A0E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D8F1FD4BE66CCBE3072D6F;
+			remoteInfo = "Pods-GuessWhatTIYTeamProject-AFNetworking";
+		};
+		48BD021C737EDF5D6028FAF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 675F3DDBE7308B8B6772CA48;
+			remoteInfo = "Pods-GuessWhatTIYTeamProject-Alamofire";
+		};
+		77091F3B153C997587BFAD5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D8F1FD4BE66CCBE3072D6F;
+			remoteInfo = "Pods-GuessWhatTIYTeamProject-AFNetworking";
+		};
+		E33591A9A7B9133633B5D3F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF261D1CFE4B16ADBE053B64;
+			remoteInfo = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager";
+		};
+		F5117F267007F70A19DC8511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F724694DB926E0958890B71;
+			remoteInfo = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0022474C77126ACDCC7E14EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		072B912FAA86B5FF085E688A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07B9095D042F9F35C4E3E6C3 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.xcconfig"; sourceTree = "<group>"; };
+		092BD53EF55AF880282804A9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		098DF82D39667C7B454E00F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BCA8CDC45FCF2C9DB07DD96 /* AFAmazonS3ResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAmazonS3ResponseSerializer.h; path = AFAmazonS3Manager/AFAmazonS3ResponseSerializer.h; sourceTree = "<group>"; };
+		0F1A0131EB5F0B54D1AE435D /* AmazonS3RequestManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmazonS3RequestManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1044518CBFDF6432F8FFEF62 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		1062316FF45E5DC51530C8BC /* AFAmazonS3Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFAmazonS3Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		124EB1BAD1BF7562224B32E5 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.xcconfig"; sourceTree = "<group>"; };
+		12E58E9679BC254B88E41BC5 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		160522700F28778704FF389D /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-umbrella.h"; sourceTree = "<group>"; };
+		18DFDCFE089896511917A428 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		1C1D5A31BE627ADBB242F423 /* AmazonS3ACL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmazonS3ACL.swift; path = AmazonS3RequestManager/AmazonS3ACL.swift; sourceTree = "<group>"; };
+		1CF969C5FD562E420F969FDB /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1EC290F84D8BC84C96191C4A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2297415CC6E8608872E8BB11 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		2384E5565B20C1BC4ED65E93 /* Pods-GuessWhatTIYTeamProject-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		24ECB6DBF4B14368ECE93B15 /* Pods-GuessWhatTIYTeamProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GuessWhatTIYTeamProject.modulemap"; sourceTree = "<group>"; };
+		263C52C0D580555C7C460A83 /* Pods-GuessWhatTIYTeamProject-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-environment.h"; sourceTree = "<group>"; };
+		26F0BAC74850EDE69FBEE2A0 /* AFAmazonS3Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAmazonS3Manager.h; path = AFAmazonS3Manager/AFAmazonS3Manager.h; sourceTree = "<group>"; };
+		272D9D7F59D95E08C39DB020 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		29CA162AF0C23F249E43B4BF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		2ADF863CE85FFEB4DE1CB832 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8960A05CD5A6AB2B62F2FE /* Pods-GuessWhatTIYTeamProject-AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		3800E3D4B5079D4097B131A0 /* Pods-GuessWhatTIYTeamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject.debug.xcconfig"; sourceTree = "<group>"; };
+		397AE73529A7BDBD40A1FFAE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		3DBE6F3768BFA790D61DC96E /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-prefix.pch"; sourceTree = "<group>"; };
+		4092385E730BCD7015D79014 /* Pods-GuessWhatTIYTeamProject-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		4551D74F17BE9F7B277B19DA /* Pods-GuessWhatTIYTeamProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-umbrella.h"; sourceTree = "<group>"; };
+		49CCFA8ED1B17452007DC873 /* Pods-GuessWhatTIYTeamProject-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		4B1ED6DE5D9D7B371D571FC5 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.modulemap"; sourceTree = "<group>"; };
+		4CEE9925F5F39C0FA6BC1988 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F09A093938B5B2B070520DF /* Pods-GuessWhatTIYTeamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject.release.xcconfig"; sourceTree = "<group>"; };
+		561ACD95E7EE8B71F31FEED4 /* AFAmazonS3RequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAmazonS3RequestSerializer.m; path = AFAmazonS3Manager/AFAmazonS3RequestSerializer.m; sourceTree = "<group>"; };
+		5984776BCA88FB0B16F65D1F /* Pods-GuessWhatTIYTeamProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuessWhatTIYTeamProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A818FC5552513A560F90BB5 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-umbrella.h"; sourceTree = "<group>"; };
+		5E14CBEC6739B5AF05B7AFD7 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-Private.xcconfig"; sourceTree = "<group>"; };
+		5E2B88A191C53DD7A0F334D7 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		5F2149A3D58E82386074BE6A /* Pods-GuessWhatTIYTeamProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuessWhatTIYTeamProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		6103E9F452FF37BA672ECDCF /* AmazonS3RequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmazonS3RequestManager.swift; path = AmazonS3RequestManager/AmazonS3RequestManager.swift; sourceTree = "<group>"; };
+		631EB60B78C4DFB400B13A9F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		63989843F32CC7E4F10953F6 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		6614E1D96D827E609B279B64 /* Pods_GuessWhatTIYTeamProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessWhatTIYTeamProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6656C87B54E8BE2137353D32 /* AFAmazonS3RequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAmazonS3RequestSerializer.h; path = AFAmazonS3Manager/AFAmazonS3RequestSerializer.h; sourceTree = "<group>"; };
+		6801F4F8778FB722130CB744 /* Pods-GuessWhatTIYTeamProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuessWhatTIYTeamProject-frameworks.sh"; sourceTree = "<group>"; };
+		795D71278828FED97D743516 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7972367E531CDD33C0861606 /* Pods-GuessWhatTIYTeamProject-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		7C87138E1DE681C8D71B757A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81478C930C0FEE68F03B563A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		827771BF0DE1ED7FC2610191 /* AmazonS3SignatureHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AmazonS3SignatureHelpers.m; path = AmazonS3RequestManager/AmazonS3SignatureHelpers.m; sourceTree = "<group>"; };
+		87AA33ADEA7728B5DBBE577A /* Pods-GuessWhatTIYTeamProject-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		88E637EC19A20657755EEBD3 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-dummy.m"; sourceTree = "<group>"; };
+		8BBC54B9A8D3719547811E39 /* Pods-GuessWhatTIYTeamProject-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		8CC5A142DCC3C10BAA9BCF86 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		933FF21994AEA6DD37F2C158 /* AmazonS3RequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AmazonS3RequestManager.h; path = AmazonS3RequestManager/AmazonS3RequestManager.h; sourceTree = "<group>"; };
+		95E755CC6EDCC0C01B092837 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-prefix.pch"; sourceTree = "<group>"; };
+		98E3390237450B674D53D6BB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		9990520A1505C490B6C3C3C2 /* Pods-GuessWhatTIYTeamProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuessWhatTIYTeamProject-dummy.m"; sourceTree = "<group>"; };
+		99AE5C74DD8428A06780B37F /* AmazonS3SignatureHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AmazonS3SignatureHelpers.h; path = AmazonS3RequestManager/AmazonS3SignatureHelpers.h; sourceTree = "<group>"; };
+		9DE0D4433842F014594AD63C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		9FC20E860E094B846BD02286 /* Pods-GuessWhatTIYTeamProject-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuessWhatTIYTeamProject-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		A42B7E97B98890DC5606865B /* Pods-GuessWhatTIYTeamProject-AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GuessWhatTIYTeamProject-AFNetworking.modulemap"; sourceTree = "<group>"; };
+		AB724C391C2BFE6373F3E59F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B073CEB35AB048D8C2A51A75 /* Pods-GuessWhatTIYTeamProject-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GuessWhatTIYTeamProject-Alamofire.modulemap"; sourceTree = "<group>"; };
+		B1113BA6881C86046527F952 /* Pods-GuessWhatTIYTeamProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuessWhatTIYTeamProject-resources.sh"; sourceTree = "<group>"; };
+		B5CCA6D16FD76CDD612FA0BC /* Pods-GuessWhatTIYTeamProject-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuessWhatTIYTeamProject-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		B6611A0F64514C7536DBAAAB /* AFAmazonS3ResponseSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAmazonS3ResponseSerializer.m; path = AFAmazonS3Manager/AFAmazonS3ResponseSerializer.m; sourceTree = "<group>"; };
+		B9B9BD43C15BA766C0C83303 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		C65F58CE854834D6F0467555 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.modulemap"; sourceTree = "<group>"; };
+		C6DEF621C5A353801991B976 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C9DD9213B84D7A11F070AB02 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-dummy.m"; sourceTree = "<group>"; };
+		CB1E783A802A5B6F70701605 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		CC5BF0D841F201095ECAB188 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CEB232C8B5BEC102C121B094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CFB49EDC6CBEF729661FA438 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		D2FF3DD0D96FC38241CB18CC /* Pods-GuessWhatTIYTeamProject-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuessWhatTIYTeamProject-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D5F684F62E7CCF9D0694A1F6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		D71CE076C22128DEEA7B5EE9 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD539F1ABF5CF5371AAC7047 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-Private.xcconfig"; sourceTree = "<group>"; };
+		DF44AD24CB63C2DCC1491162 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		E7C6B6B6312A86E2764E0BC7 /* AFAmazonS3Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAmazonS3Manager.m; path = AFAmazonS3Manager/AFAmazonS3Manager.m; sourceTree = "<group>"; };
+		EFD5CE51369620F8E4A78012 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F26F5E61EE9BFD3579FFE0E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F28E72E352832E0492747F86 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54801663504711AF8DAD9696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BF6713A942A0AB0000FAC0 /* AFNetworking.framework in Frameworks */,
+				28C88FEC8B7DC09496DFB02A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A1AC598A2B76D055272A0A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1747798B09F2BE35E7465B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7994AEB54F9CDF49A3E07769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C6F736B9DF8F102C55B12E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9AD108FAD4367CB7C616DEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D98D33FDC1F2A0718DBCDD9 /* CoreGraphics.framework in Frameworks */,
+				4BB15D4FF022BBD1516F8BF6 /* Foundation.framework in Frameworks */,
+				5074D9E3073987AAB80EB56C /* MobileCoreServices.framework in Frameworks */,
+				D9381194B2EE5B04B9090674 /* Security.framework in Frameworks */,
+				8EE020E0B70EE170FB885595 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EC41A3C2FD6589DC34212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4823435EE17B9EB4F24F915 /* Alamofire.framework in Frameworks */,
+				197A037E41DCF2F53DDC125E /* Foundation.framework in Frameworks */,
+				CD1A767BF73DC4EE259B0967 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A25022035AC99470F21B87 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C87138E1DE681C8D71B757A /* Info.plist */,
+				B073CEB35AB048D8C2A51A75 /* Pods-GuessWhatTIYTeamProject-Alamofire.modulemap */,
+				7972367E531CDD33C0861606 /* Pods-GuessWhatTIYTeamProject-Alamofire.xcconfig */,
+				4092385E730BCD7015D79014 /* Pods-GuessWhatTIYTeamProject-Alamofire-Private.xcconfig */,
+				D2FF3DD0D96FC38241CB18CC /* Pods-GuessWhatTIYTeamProject-Alamofire-dummy.m */,
+				49CCFA8ED1B17452007DC873 /* Pods-GuessWhatTIYTeamProject-Alamofire-prefix.pch */,
+				9FC20E860E094B846BD02286 /* Pods-GuessWhatTIYTeamProject-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire";
+			sourceTree = "<group>";
+		};
+		14DFD320913EA33BC9075DDD = {
+			isa = PBXGroup;
+			children = (
+				072B912FAA86B5FF085E688A /* Podfile */,
+				2E1F461CBC4CE5B1F8FE3AA5 /* Frameworks */,
+				995F7BA8A470AEC25F57225E /* Pods */,
+				CA332C1F0CC633F4426F951B /* Products */,
+				FFB0B493A890D5336FE72EBC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		20692FAD70807D0FB01AA4D5 /* AmazonS3RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				1C1D5A31BE627ADBB242F423 /* AmazonS3ACL.swift */,
+				933FF21994AEA6DD37F2C158 /* AmazonS3RequestManager.h */,
+				6103E9F452FF37BA672ECDCF /* AmazonS3RequestManager.swift */,
+				99AE5C74DD8428A06780B37F /* AmazonS3SignatureHelpers.h */,
+				827771BF0DE1ED7FC2610191 /* AmazonS3SignatureHelpers.m */,
+				FF1A8DB43A6DB1B3891BB469 /* Support Files */,
+			);
+			path = AmazonS3RequestManager;
+			sourceTree = "<group>";
+		};
+		2221DAB98E22B0A8B4B4A31D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0022474C77126ACDCC7E14EF /* CoreGraphics.framework */,
+				81478C930C0FEE68F03B563A /* Foundation.framework */,
+				272D9D7F59D95E08C39DB020 /* MobileCoreServices.framework */,
+				CEB232C8B5BEC102C121B094 /* Security.framework */,
+				397AE73529A7BDBD40A1FFAE /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2C5D9199EA2F6A6DCF339793 /* AFAmazonS3Manager */ = {
+			isa = PBXGroup;
+			children = (
+				26F0BAC74850EDE69FBEE2A0 /* AFAmazonS3Manager.h */,
+				E7C6B6B6312A86E2764E0BC7 /* AFAmazonS3Manager.m */,
+				6656C87B54E8BE2137353D32 /* AFAmazonS3RequestSerializer.h */,
+				561ACD95E7EE8B71F31FEED4 /* AFAmazonS3RequestSerializer.m */,
+				0BCA8CDC45FCF2C9DB07DD96 /* AFAmazonS3ResponseSerializer.h */,
+				B6611A0F64514C7536DBAAAB /* AFAmazonS3ResponseSerializer.m */,
+				A89FD982078ACDF74871EDCB /* Support Files */,
+			);
+			path = AFAmazonS3Manager;
+			sourceTree = "<group>";
+		};
+		2E1F461CBC4CE5B1F8FE3AA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D71CE076C22128DEEA7B5EE9 /* AFNetworking.framework */,
+				AB724C391C2BFE6373F3E59F /* Alamofire.framework */,
+				2221DAB98E22B0A8B4B4A31D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AA50872B3204B38D086453A /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				092BD53EF55AF880282804A9 /* AFHTTPRequestOperation.h */,
+				8CC5A142DCC3C10BAA9BCF86 /* AFHTTPRequestOperation.m */,
+				F28E72E352832E0492747F86 /* AFHTTPRequestOperationManager.h */,
+				2297415CC6E8608872E8BB11 /* AFHTTPRequestOperationManager.m */,
+				63989843F32CC7E4F10953F6 /* AFURLConnectionOperation.h */,
+				EFD5CE51369620F8E4A78012 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		74B6EA3F198F63310B90BB9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CEE9925F5F39C0FA6BC1988 /* Info.plist */,
+				A42B7E97B98890DC5606865B /* Pods-GuessWhatTIYTeamProject-AFNetworking.modulemap */,
+				87AA33ADEA7728B5DBBE577A /* Pods-GuessWhatTIYTeamProject-AFNetworking.xcconfig */,
+				2384E5565B20C1BC4ED65E93 /* Pods-GuessWhatTIYTeamProject-AFNetworking-Private.xcconfig */,
+				B5CCA6D16FD76CDD612FA0BC /* Pods-GuessWhatTIYTeamProject-AFNetworking-dummy.m */,
+				8BBC54B9A8D3719547811E39 /* Pods-GuessWhatTIYTeamProject-AFNetworking-prefix.pch */,
+				2D8960A05CD5A6AB2B62F2FE /* Pods-GuessWhatTIYTeamProject-AFNetworking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking";
+			sourceTree = "<group>";
+		};
+		787EA0E2334F8DAA96254FBE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BF0D841F201095ECAB188 /* AFNetworkReachabilityManager.h */,
+				C6DEF621C5A353801991B976 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		918F774632529CE475CA3048 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				1044518CBFDF6432F8FFEF62 /* Alamofire.swift */,
+				12E58E9679BC254B88E41BC5 /* Download.swift */,
+				B9B9BD43C15BA766C0C83303 /* Manager.swift */,
+				D5F684F62E7CCF9D0694A1F6 /* ParameterEncoding.swift */,
+				29CA162AF0C23F249E43B4BF /* Request.swift */,
+				1CF969C5FD562E420F969FDB /* ResponseSerialization.swift */,
+				CB1E783A802A5B6F70701605 /* Upload.swift */,
+				5E2B88A191C53DD7A0F334D7 /* Validation.swift */,
+				09A25022035AC99470F21B87 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		995F7BA8A470AEC25F57225E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C5D9199EA2F6A6DCF339793 /* AFAmazonS3Manager */,
+				AFFFF7F108397E5A194CB857 /* AFNetworking */,
+				918F774632529CE475CA3048 /* Alamofire */,
+				20692FAD70807D0FB01AA4D5 /* AmazonS3RequestManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A89FD982078ACDF74871EDCB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF863CE85FFEB4DE1CB832 /* Info.plist */,
+				C65F58CE854834D6F0467555 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.modulemap */,
+				124EB1BAD1BF7562224B32E5 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.xcconfig */,
+				DD539F1ABF5CF5371AAC7047 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-Private.xcconfig */,
+				88E637EC19A20657755EEBD3 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-dummy.m */,
+				3DBE6F3768BFA790D61DC96E /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-prefix.pch */,
+				160522700F28778704FF389D /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager";
+			sourceTree = "<group>";
+		};
+		AFFFF7F108397E5A194CB857 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3AA50872B3204B38D086453A /* NSURLConnection */,
+				787EA0E2334F8DAA96254FBE /* Reachability */,
+				F1BDCAF333A0699833C6A99E /* Security */,
+				DC702A765E2CDDA9605F0AF6 /* Serialization */,
+				74B6EA3F198F63310B90BB9E /* Support Files */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CA332C1F0CC633F4426F951B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1062316FF45E5DC51530C8BC /* AFAmazonS3Manager.framework */,
+				795D71278828FED97D743516 /* AFNetworking.framework */,
+				1EC290F84D8BC84C96191C4A /* Alamofire.framework */,
+				0F1A0131EB5F0B54D1AE435D /* AmazonS3RequestManager.framework */,
+				6614E1D96D827E609B279B64 /* Pods_GuessWhatTIYTeamProject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D56B205A9196BDB7A5EB9A /* Pods-GuessWhatTIYTeamProject */ = {
+			isa = PBXGroup;
+			children = (
+				098DF82D39667C7B454E00F5 /* Info.plist */,
+				24ECB6DBF4B14368ECE93B15 /* Pods-GuessWhatTIYTeamProject.modulemap */,
+				5984776BCA88FB0B16F65D1F /* Pods-GuessWhatTIYTeamProject-acknowledgements.markdown */,
+				5F2149A3D58E82386074BE6A /* Pods-GuessWhatTIYTeamProject-acknowledgements.plist */,
+				9990520A1505C490B6C3C3C2 /* Pods-GuessWhatTIYTeamProject-dummy.m */,
+				263C52C0D580555C7C460A83 /* Pods-GuessWhatTIYTeamProject-environment.h */,
+				6801F4F8778FB722130CB744 /* Pods-GuessWhatTIYTeamProject-frameworks.sh */,
+				B1113BA6881C86046527F952 /* Pods-GuessWhatTIYTeamProject-resources.sh */,
+				4551D74F17BE9F7B277B19DA /* Pods-GuessWhatTIYTeamProject-umbrella.h */,
+				3800E3D4B5079D4097B131A0 /* Pods-GuessWhatTIYTeamProject.debug.xcconfig */,
+				4F09A093938B5B2B070520DF /* Pods-GuessWhatTIYTeamProject.release.xcconfig */,
+			);
+			name = "Pods-GuessWhatTIYTeamProject";
+			path = "Target Support Files/Pods-GuessWhatTIYTeamProject";
+			sourceTree = "<group>";
+		};
+		DC702A765E2CDDA9605F0AF6 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				CFB49EDC6CBEF729661FA438 /* AFURLRequestSerialization.h */,
+				98E3390237450B674D53D6BB /* AFURLRequestSerialization.m */,
+				DF44AD24CB63C2DCC1491162 /* AFURLResponseSerialization.h */,
+				631EB60B78C4DFB400B13A9F /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		F1BDCAF333A0699833C6A99E /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				18DFDCFE089896511917A428 /* AFSecurityPolicy.h */,
+				9DE0D4433842F014594AD63C /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		FF1A8DB43A6DB1B3891BB469 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F26F5E61EE9BFD3579FFE0E5 /* Info.plist */,
+				4B1ED6DE5D9D7B371D571FC5 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.modulemap */,
+				07B9095D042F9F35C4E3E6C3 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.xcconfig */,
+				5E14CBEC6739B5AF05B7AFD7 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-Private.xcconfig */,
+				C9DD9213B84D7A11F070AB02 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-dummy.m */,
+				95E755CC6EDCC0C01B092837 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-prefix.pch */,
+				5A818FC5552513A560F90BB5 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager";
+			sourceTree = "<group>";
+		};
+		FFB0B493A890D5336FE72EBC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4D56B205A9196BDB7A5EB9A /* Pods-GuessWhatTIYTeamProject */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A2C39DBF2EE131CA070843B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0700F27C36F1D4800B3D234 /* AFAmazonS3Manager.h in Headers */,
+				4F81DEBDEAA1DB90601F7D35 /* AFAmazonS3RequestSerializer.h in Headers */,
+				8D8708376F93E5E572BF47DD /* AFAmazonS3ResponseSerializer.h in Headers */,
+				9487E70021AA351507B298D4 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4CA98BE9EFA6B1C553E810 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B25BAC3C1F6AE39E5EBA46 /* Pods-GuessWhatTIYTeamProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB2E78D571E5F35A286D8F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1792DFE32B459B6C836F3F4E /* AmazonS3RequestManager.h in Headers */,
+				D367ABA1CBFA54E8DDDF5B52 /* AmazonS3SignatureHelpers.h in Headers */,
+				B069F474F4AD6E6E83FB6FAC /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C3C9712489E9CF750B8ECF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48EE839BF49EA1D10831F5A6 /* Pods-GuessWhatTIYTeamProject-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B905C2ED5C803724D5F001 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69437DAE50B0492C917274B7 /* AFHTTPRequestOperation.h in Headers */,
+				FE98FCE20ADC9DF734300B4F /* AFHTTPRequestOperationManager.h in Headers */,
+				057C8AB06D34FE022E4914CE /* AFNetworkReachabilityManager.h in Headers */,
+				535D3F7EFFAF5FD474AFD0D1 /* AFSecurityPolicy.h in Headers */,
+				09475F304BEB7459032E744C /* AFURLConnectionOperation.h in Headers */,
+				9DD033CD8408DB1DB5021B7F /* AFURLRequestSerialization.h in Headers */,
+				00D0CFAC64957711EF55ABDE /* AFURLResponseSerialization.h in Headers */,
+				432F62D75B38D2F603EF16EE /* Pods-GuessWhatTIYTeamProject-AFNetworking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		675F3DDBE7308B8B6772CA48 /* Pods-GuessWhatTIYTeamProject-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E8DB63530F6E7410F8BBD4 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-Alamofire" */;
+			buildPhases = (
+				0478FAB422CF10455E48A3C8 /* Sources */,
+				5A1AC598A2B76D055272A0A2 /* Frameworks */,
+				D2C3C9712489E9CF750B8ECF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GuessWhatTIYTeamProject-Alamofire";
+			productName = "Pods-GuessWhatTIYTeamProject-Alamofire";
+			productReference = 1EC290F84D8BC84C96191C4A /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F724694DB926E0958890B71 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62E90F9B327D8757FC0092D5 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager" */;
+			buildPhases = (
+				B89A4336B8EE4FD12BD47A02 /* Sources */,
+				CC7EC41A3C2FD6589DC34212 /* Frameworks */,
+				9FB2E78D571E5F35A286D8F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2ED76091B576AB167054F0C /* PBXTargetDependency */,
+			);
+			name = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager";
+			productName = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager";
+			productReference = 0F1A0131EB5F0B54D1AE435D /* AmazonS3RequestManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C501BA65965556CB3C9D5C37 /* Pods-GuessWhatTIYTeamProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09583A147CC95773F0EF9AC7 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject" */;
+			buildPhases = (
+				39D27F4E46B47855DC475533 /* Sources */,
+				7994AEB54F9CDF49A3E07769 /* Frameworks */,
+				4B4CA98BE9EFA6B1C553E810 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4443578D7E257DEE5BB74C86 /* PBXTargetDependency */,
+				074EDF6A6FE92D2A39367468 /* PBXTargetDependency */,
+				B92DA3897ABD66AD78DE9B68 /* PBXTargetDependency */,
+				D19D6FA1691F76F1C8177777 /* PBXTargetDependency */,
+			);
+			name = "Pods-GuessWhatTIYTeamProject";
+			productName = "Pods-GuessWhatTIYTeamProject";
+			productReference = 6614E1D96D827E609B279B64 /* Pods_GuessWhatTIYTeamProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF261D1CFE4B16ADBE053B64 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA6ECB72E771FA491C89576 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager" */;
+			buildPhases = (
+				356F1FAB7E63FE7ADBD31351 /* Sources */,
+				54801663504711AF8DAD9696 /* Frameworks */,
+				2A2C39DBF2EE131CA070843B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CE3E678444AEA205BDF7BC7 /* PBXTargetDependency */,
+			);
+			name = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager";
+			productName = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager";
+			productReference = 1062316FF45E5DC51530C8BC /* AFAmazonS3Manager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3D8F1FD4BE66CCBE3072D6F /* Pods-GuessWhatTIYTeamProject-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D936008A06E958324B51B592 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-AFNetworking" */;
+			buildPhases = (
+				45A830FE83FB68A0869D5B04 /* Sources */,
+				B9AD108FAD4367CB7C616DEE /* Frameworks */,
+				D5B905C2ED5C803724D5F001 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GuessWhatTIYTeamProject-AFNetworking";
+			productName = "Pods-GuessWhatTIYTeamProject-AFNetworking";
+			productReference = 795D71278828FED97D743516 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD9D0E14A57DD188A0BFFA04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 56C6DAE6F5E3C5C01FADEBF8 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14DFD320913EA33BC9075DDD;
+			productRefGroup = CA332C1F0CC633F4426F951B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C501BA65965556CB3C9D5C37 /* Pods-GuessWhatTIYTeamProject */,
+				DF261D1CFE4B16ADBE053B64 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager */,
+				E3D8F1FD4BE66CCBE3072D6F /* Pods-GuessWhatTIYTeamProject-AFNetworking */,
+				675F3DDBE7308B8B6772CA48 /* Pods-GuessWhatTIYTeamProject-Alamofire */,
+				6F724694DB926E0958890B71 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0478FAB422CF10455E48A3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C58B596F981BD7E09EE0B1 /* Alamofire.swift in Sources */,
+				C7C1846F0CEF17134F248590 /* Download.swift in Sources */,
+				7B36470F1492630E4A183AE0 /* Manager.swift in Sources */,
+				90215528718C67BA849D6436 /* ParameterEncoding.swift in Sources */,
+				AB6F2BB157C79F9A36153FA1 /* Pods-GuessWhatTIYTeamProject-Alamofire-dummy.m in Sources */,
+				DE229B2F5F99E717B2D0250E /* Request.swift in Sources */,
+				381D7D22511EFE4CA95AE855 /* ResponseSerialization.swift in Sources */,
+				9F44DE1C80B41602A5CBB91E /* Upload.swift in Sources */,
+				8CD36C85E9474CB660BEDCE4 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		356F1FAB7E63FE7ADBD31351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19763DBC816918CBE52CC4F9 /* AFAmazonS3Manager.m in Sources */,
+				FD99CB5F7AFF879ACC5D305E /* AFAmazonS3RequestSerializer.m in Sources */,
+				1377BCB650EE7808091D499F /* AFAmazonS3ResponseSerializer.m in Sources */,
+				FF0BB5D066995F22F2713610 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D27F4E46B47855DC475533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F8F0E2B60B3BE243CD21B0 /* Pods-GuessWhatTIYTeamProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A830FE83FB68A0869D5B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978DD5AB06DF80545D640CE5 /* AFHTTPRequestOperation.m in Sources */,
+				2691078DC5064DA13210D190 /* AFHTTPRequestOperationManager.m in Sources */,
+				2331BD4FA0A6E33D881085A0 /* AFNetworkReachabilityManager.m in Sources */,
+				5E187428EB695BD54555B5A3 /* AFSecurityPolicy.m in Sources */,
+				58912D23AB7AD9C92CE8FC86 /* AFURLConnectionOperation.m in Sources */,
+				D856181B880FA8DCE6D176ED /* AFURLRequestSerialization.m in Sources */,
+				9ACE4C2544DE50B37CD4C695 /* AFURLResponseSerialization.m in Sources */,
+				2128A1A3DEC146661A421AB5 /* Pods-GuessWhatTIYTeamProject-AFNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89A4336B8EE4FD12BD47A02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D34CA43E71CB76C192F6E9E /* AmazonS3ACL.swift in Sources */,
+				7202DA99609271418350F8A0 /* AmazonS3RequestManager.swift in Sources */,
+				0FB42BBAE045833CEFDB7554 /* AmazonS3SignatureHelpers.m in Sources */,
+				A3617FC45A46EBB9B1D6C855 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074EDF6A6FE92D2A39367468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuessWhatTIYTeamProject-AFNetworking";
+			target = E3D8F1FD4BE66CCBE3072D6F /* Pods-GuessWhatTIYTeamProject-AFNetworking */;
+			targetProxy = 22E3F8C719FAF6B7B54A0E4F /* PBXContainerItemProxy */;
+		};
+		3CE3E678444AEA205BDF7BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuessWhatTIYTeamProject-AFNetworking";
+			target = E3D8F1FD4BE66CCBE3072D6F /* Pods-GuessWhatTIYTeamProject-AFNetworking */;
+			targetProxy = 77091F3B153C997587BFAD5E /* PBXContainerItemProxy */;
+		};
+		4443578D7E257DEE5BB74C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager";
+			target = DF261D1CFE4B16ADBE053B64 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager */;
+			targetProxy = E33591A9A7B9133633B5D3F3 /* PBXContainerItemProxy */;
+		};
+		B92DA3897ABD66AD78DE9B68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuessWhatTIYTeamProject-Alamofire";
+			target = 675F3DDBE7308B8B6772CA48 /* Pods-GuessWhatTIYTeamProject-Alamofire */;
+			targetProxy = 07CF7918F6F5302A5078B267 /* PBXContainerItemProxy */;
+		};
+		D19D6FA1691F76F1C8177777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager";
+			target = 6F724694DB926E0958890B71 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager */;
+			targetProxy = F5117F267007F70A19DC8511 /* PBXContainerItemProxy */;
+		};
+		D2ED76091B576AB167054F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuessWhatTIYTeamProject-Alamofire";
+			target = 675F3DDBE7308B8B6772CA48 /* Pods-GuessWhatTIYTeamProject-Alamofire */;
+			targetProxy = 48BD021C737EDF5D6028FAF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2929D749E570453A7A1B18E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD539F1ABF5CF5371AAC7047 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFAmazonS3Manager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		452ED5D7E0888A1ED1C6FA52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F09A093938B5B2B070520DF /* Pods-GuessWhatTIYTeamProject.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject/Pods-GuessWhatTIYTeamProject.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GuessWhatTIYTeamProject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AE68EC56216DC1212ACCBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4092385E730BCD7015D79014 /* Pods-GuessWhatTIYTeamProject-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire/Pods-GuessWhatTIYTeamProject-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire/Pods-GuessWhatTIYTeamProject-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EDF44DD3EC4240A12DF3C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3800E3D4B5079D4097B131A0 /* Pods-GuessWhatTIYTeamProject.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject/Pods-GuessWhatTIYTeamProject.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GuessWhatTIYTeamProject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		685639252234A5952FA33286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DB61C0B5CCB2F5F8975201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E14CBEC6739B5AF05B7AFD7 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AmazonS3RequestManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86DB45C15CDA5B8CBEF350CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B96147CF767E83786A58270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2384E5565B20C1BC4ED65E93 /* Pods-GuessWhatTIYTeamProject-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking/Pods-GuessWhatTIYTeamProject-AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking/Pods-GuessWhatTIYTeamProject-AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4432E2FBBE37BD9759AF4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E14CBEC6739B5AF05B7AFD7 /* Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager/Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AmazonS3RequestManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B848E2E38DE0FED70E6C436A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD539F1ABF5CF5371AAC7047 /* Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager/Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFAmazonS3Manager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA38F1D73851AE50E9A9F429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4092385E730BCD7015D79014 /* Pods-GuessWhatTIYTeamProject-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire/Pods-GuessWhatTIYTeamProject-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-Alamofire/Pods-GuessWhatTIYTeamProject-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEEF20B3E261F7779CE5D391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2384E5565B20C1BC4ED65E93 /* Pods-GuessWhatTIYTeamProject-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking/Pods-GuessWhatTIYTeamProject-AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-GuessWhatTIYTeamProject-AFNetworking/Pods-GuessWhatTIYTeamProject-AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09583A147CC95773F0EF9AC7 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EDF44DD3EC4240A12DF3C97 /* Debug */,
+				452ED5D7E0888A1ED1C6FA52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C6DAE6F5E3C5C01FADEBF8 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86DB45C15CDA5B8CBEF350CC /* Debug */,
+				685639252234A5952FA33286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA6ECB72E771FA491C89576 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-AFAmazonS3Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2929D749E570453A7A1B18E2 /* Debug */,
+				B848E2E38DE0FED70E6C436A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E90F9B327D8757FC0092D5 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-AmazonS3RequestManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4432E2FBBE37BD9759AF4C9 /* Debug */,
+				7DB61C0B5CCB2F5F8975201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E8DB63530F6E7410F8BBD4 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE68EC56216DC1212ACCBCA /* Debug */,
+				BA38F1D73851AE50E9A9F429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D936008A06E958324B51B592 /* Build configuration list for PBXNativeTarget "Pods-GuessWhatTIYTeamProject-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B96147CF767E83786A58270 /* Debug */,
+				FEEF20B3E261F7779CE5D391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD9D0E14A57DD188A0BFFA04 /* Project object */;
+}
