@@ -7,11 +7,41 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var imagePickerController = UIImagePickerController()
+    
+    
+    @IBAction func takePicture(sender: UIButton) {
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+        
+            imagePickerController.delegate = self
+            imagePickerController.sourceType = UIImagePickerControllerSourceType.Camera
+            imagePickerController.mediaTypes = [kUTTypeImage]
+            imagePickerController.allowsEditing = true
+            self.presentViewController(imagePickerController, animated: true, completion: nil)
+    
+        } else {
+    
+    
+    println("No Camera.")
+    
+    }
+
+    
+        
+        }
+       
+        
+        
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
 
         // Do any additional setup after loading the view.
     }

@@ -16,6 +16,8 @@
 		04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817FF1B31FBC0007861AA /* LoginViewController.swift */; };
 		04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818011B31FBD8007861AA /* RegisterViewController.swift */; };
 		04A818041B321E0E007861AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818031B321E0E007861AA /* CameraViewController.swift */; };
+		04A818061B322A69007861AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818051B322A69007861AA /* ViewController.swift */; };
+		04A8180A1B3280B9007861AA /* PictureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818091B3280B9007861AA /* PictureButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		04A817FF1B31FBC0007861AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04A818011B31FBD8007861AA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		04A818031B321E0E007861AA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		04A818051B322A69007861AA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A818091B3280B9007861AA /* PictureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +87,12 @@
 		04A817DC1B31E3FD007861AA /* GuessWhatTIYTeamProject */ = {
 			isa = PBXGroup;
 			children = (
-				04A817FF1B31FBC0007861AA /* LoginViewController.swift */,
-				04A818031B321E0E007861AA /* CameraViewController.swift */,
-				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
 				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
+				04A817FF1B31FBC0007861AA /* LoginViewController.swift */,
+				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
+				04A818091B3280B9007861AA /* PictureButton.swift */,
+				04A818031B321E0E007861AA /* CameraViewController.swift */,
+				04A818051B322A69007861AA /* ViewController.swift */,
 				04A817E31B31E3FD007861AA /* Main.storyboard */,
 				04A817E61B31E3FD007861AA /* Images.xcassets */,
 				04A817E81B31E3FE007861AA /* LaunchScreen.xib */,
@@ -221,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A818061B322A69007861AA /* ViewController.swift in Sources */,
 				04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */,
 				04A818041B321E0E007861AA /* CameraViewController.swift in Sources */,
+				04A8180A1B3280B9007861AA /* PictureButton.swift in Sources */,
 				04A817E21B31E3FD007861AA /* FirstViewController.swift in Sources */,
 				04A817E01B31E3FD007861AA /* AppDelegate.swift in Sources */,
 				04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */,
