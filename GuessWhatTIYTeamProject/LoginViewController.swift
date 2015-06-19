@@ -8,30 +8,56 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var usernameTextField: UITextField!
   
-    @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
-    
-
-    @IBAction func submitLoginButton(sender: UIButton) {
-        
-        
+    @IBAction func submitButton(sender: AnyObject) {
+        submitButtonPressed()
     }
+
+    @IBAction func goBackFromLogin(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        RailsRequest.session().username =
-//        
-//        RailsRequest.session().login()
-//        
         
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.hidden = false
+
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+        
+            
+    }
+        
+    func submitButtonPressed() {
+            
+        RailsRequest.session().username = usernameTextField!.text
+        RailsRequest.session().password = passwordTextField!.text
+        
+        RailsRequest.session().login { () -> Void in
+            
+            self.goBackToStartScreen()
+        
+        }
+    }
+    
+    func goBackToStartScreen() {
+        
+        println("go back to start screen")
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
     }
 
     override func didReceiveMemoryWarning() {

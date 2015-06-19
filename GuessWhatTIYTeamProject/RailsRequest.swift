@@ -38,23 +38,32 @@ class RailsRequest: NSObject {
     var username: String?
     var email: String?
     var password: String?
+    var firstName: String?
+    var lastName: String?
     
     func registerCompletion(completion: () -> Void) {
     
         var info =  [
         
             "method" : "POST",
-            "endPoint" : "/users/register",
+            "endpoint" : "/users/register",
             "parameters" : [
                 
                "username": username!,
                 "email" : email!,
-                "password" : password!
+                "password" : password!,
+                "first_name" : firstName!,
+                "last_name" : lastName!
             ]
         
         ] as [String:AnyObject]
     
+        
+        println(info)
+        
         requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
+            
+            println("Register Completion Response 1: \(responseInfo)")
             
             if let accessToken = responseInfo?["access_token"] as? String {
             
@@ -65,6 +74,8 @@ class RailsRequest: NSObject {
             }
             
         })
+        
+        completion()
     
     }
     
@@ -73,7 +84,7 @@ class RailsRequest: NSObject {
         var info =  [
             
             "method" : "POST",
-            "endPoint" : "/users/login",
+            "endpoint" : "/users/login",
             "parameters" : [
                 
                 "username": username!,
@@ -84,6 +95,8 @@ class RailsRequest: NSObject {
         
         requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
             
+            println("Login Completion Response 2: \(responseInfo)")
+            
             if let accessToken = responseInfo?["access_token"] as? String {
                 
                 self.token = accessToken
@@ -94,6 +107,8 @@ class RailsRequest: NSObject {
             
         })
         
+        completion()
+        
     }
     
     func postImage() {
@@ -101,7 +116,7 @@ class RailsRequest: NSObject {
         var info =  [
             
             "method" : "POST",
-            "endPoint" : "/users/register",
+            "endpoint" : "/posts/",
             "parameters" : [
                 
                 "username": username!,
@@ -118,7 +133,10 @@ class RailsRequest: NSObject {
     
     }
     
+    
     func requestWithInfo(info: [String:AnyObject], andCompletion completion: ((responseInfo: [String:AnyObject]?) ->Void)?) {
+        
+        println("Inside RailsRequest 1")
         
         let endpoint = info["endpoint"] as! String
         if let url = NSURL(string: API_URL + endpoint) {
