@@ -18,8 +18,10 @@
 		04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817FF1B31FBC0007861AA /* LoginViewController.swift */; };
 		04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818011B31FBD8007861AA /* RegisterViewController.swift */; };
 		04A818041B321E0E007861AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818031B321E0E007861AA /* CameraViewController.swift */; };
-		04A818061B322A69007861AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818051B322A69007861AA /* ViewController.swift */; };
-		04A8180A1B3280B9007861AA /* PictureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818091B3280B9007861AA /* PictureButton.swift */; };
+		04A818061B322A69007861AA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818051B322A69007861AA /* PostViewController.swift */; };
+		04DC06E51B344F4700D7814A /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06E41B344F4700D7814A /* GuessViewController.swift */; };
+		04DC06EA1B345CE900D7814A /* Peephole.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04DC06E91B345CE900D7814A /* Peephole.jpg */; };
+		04DC06EC1B34632900D7814A /* ExtraBlur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DC06EB1B34632900D7814A /* ExtraBlur.ttf */; };
 		04DE4A721B33097600C9F376 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 04DE4A711B33097600C9F376 /* PodFile */; };
 		B0B42DCCC98D09E1061A50FD /* Pods_GuessWhatTIYTeamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B243687F67F114B9C6AE6BF /* Pods_GuessWhatTIYTeamProject.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -51,8 +53,10 @@
 		04A817FF1B31FBC0007861AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04A818011B31FBD8007861AA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		04A818031B321E0E007861AA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		04A818051B322A69007861AA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04A818091B3280B9007861AA /* PictureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureButton.swift; sourceTree = "<group>"; };
+		04A818051B322A69007861AA /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		04DC06E41B344F4700D7814A /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		04DC06E91B345CE900D7814A /* Peephole.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Peephole.jpg; sourceTree = "<group>"; };
+		04DC06EB1B34632900D7814A /* ExtraBlur.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExtraBlur.ttf; sourceTree = "<group>"; };
 		04DE4A711B33097600C9F376 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		5B69E89DD61402F1C6D415E1 /* Pods-GuessWhatTIYTeamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhatTIYTeamProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuessWhatTIYTeamProject/Pods-GuessWhatTIYTeamProject.release.xcconfig"; sourceTree = "<group>"; };
 		6CF04B3520E8599575B5A31E /* Pods-GuessWhatTIYTeamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhatTIYTeamProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuessWhatTIYTeamProject/Pods-GuessWhatTIYTeamProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,14 +106,13 @@
 		04A817DC1B31E3FD007861AA /* GuessWhatTIYTeamProject */ = {
 			isa = PBXGroup;
 			children = (
-				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
-				04A817FF1B31FBC0007861AA /* LoginViewController.swift */,
 				0410FCB61B3359A200801191 /* RailsRequest.swift */,
+				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
 				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
-				049AF2621B331E4D001FA3B1 /* FancyButton.swift */,
-				04A818091B3280B9007861AA /* PictureButton.swift */,
+				04A817FF1B31FBC0007861AA /* LoginViewController.swift */,
 				04A818031B321E0E007861AA /* CameraViewController.swift */,
-				04A818051B322A69007861AA /* ViewController.swift */,
+				04DC06E41B344F4700D7814A /* GuessViewController.swift */,
+				04A818051B322A69007861AA /* PostViewController.swift */,
 				04A817E31B31E3FD007861AA /* Main.storyboard */,
 				04A817E61B31E3FD007861AA /* Images.xcassets */,
 				04A817E81B31E3FE007861AA /* LaunchScreen.xib */,
@@ -122,6 +125,9 @@
 		04A817DD1B31E3FD007861AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04DC06EB1B34632900D7814A /* ExtraBlur.ttf */,
+				049AF2621B331E4D001FA3B1 /* FancyButton.swift */,
+				04DC06E91B345CE900D7814A /* Peephole.jpg */,
 				04A817DF1B31E3FD007861AA /* AppDelegate.swift */,
 				04A817DE1B31E3FD007861AA /* Info.plist */,
 			);
@@ -246,6 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DC06EC1B34632900D7814A /* ExtraBlur.ttf in Resources */,
+				04DC06EA1B345CE900D7814A /* Peephole.jpg in Resources */,
 				04A817E51B31E3FD007861AA /* Main.storyboard in Resources */,
 				04A817EA1B31E3FE007861AA /* LaunchScreen.xib in Resources */,
 				04DE4A721B33097600C9F376 /* PodFile in Resources */,
@@ -315,13 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A818061B322A69007861AA /* ViewController.swift in Sources */,
+				04A818061B322A69007861AA /* PostViewController.swift in Sources */,
 				049AF2631B331E4D001FA3B1 /* FancyButton.swift in Sources */,
 				0410FCB71B3359A300801191 /* RailsRequest.swift in Sources */,
 				04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */,
 				04A818041B321E0E007861AA /* CameraViewController.swift in Sources */,
-				04A8180A1B3280B9007861AA /* PictureButton.swift in Sources */,
 				04A817E21B31E3FD007861AA /* FirstViewController.swift in Sources */,
+				04DC06E51B344F4700D7814A /* GuessViewController.swift in Sources */,
 				04A817E01B31E3FD007861AA /* AppDelegate.swift in Sources */,
 				04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */,
 			);

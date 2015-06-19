@@ -11,7 +11,7 @@ import UIKit
 private let defaults = NSUserDefaults.standardUserDefaults()
 private let _singleton = RailsRequest()
 
-let API_URL = "http://tiyqpic.herokuapp.com"
+let API_URL = "https://aqueous-brushlands-9148.herokuapp.com"
 
 
 class RailsRequest: NSObject {
@@ -68,10 +68,53 @@ class RailsRequest: NSObject {
     
     }
     
-    func login() {
+    func login(completion: () -> Void) {
+        
+        var info =  [
+            
+            "method" : "POST",
+            "endPoint" : "/users/login",
+            "parameters" : [
+                
+                "username": username!,
+                "password" : password!
+            ]
+            
+            ] as [String:AnyObject]
+        
+        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
+            
+            if let accessToken = responseInfo?["access_token"] as? String {
+                
+                self.token = accessToken
+                
+                completion()
+                
+            }
+            
+        })
+        
     }
     
     func postImage() {
+        
+        var info =  [
+            
+            "method" : "POST",
+            "endPoint" : "/users/register",
+            "parameters" : [
+                
+                "username": username!,
+                "email" : email!
+            ]
+            
+            ] as [String:AnyObject]
+        
+        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
+            
+            
+            
+        })
     
     }
     

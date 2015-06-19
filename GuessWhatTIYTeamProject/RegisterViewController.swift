@@ -9,6 +9,20 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func submitRegisterButton(sender: AnyObject) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

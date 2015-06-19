@@ -1,36 +1,18 @@
 //
-//  LoginViewController.swift
+//  GuessViewController.swift
 //  GuessWhatTIYTeamProject
 //
-//  Created by Shannon Armon on 6/17/15.
+//  Created by Shannon Armon on 6/19/15.
 //  Copyright (c) 2015 Shannon Armon. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
-    @IBOutlet weak var usernameTextField: UITextField!
-  
-    @IBOutlet weak var emailTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    
-    
+class GuessViewController: UIViewController {
 
-    @IBAction func submitLoginButton(sender: UIButton) {
-        
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        RailsRequest.session().username =
-//        
-//        RailsRequest.session().login()
-//        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -38,8 +20,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
 
     /*

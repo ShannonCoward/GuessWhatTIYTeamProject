@@ -51,12 +51,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     //        accessKey: "",
     //        secret: "")
     
-    let s3Manager = AFAmazonS3Manager(accessKeyID: "AKIAIHUPEUNXKX7YARKA", secret: "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")
+    let s3Manager = AFAmazonS3Manager(accessKeyID: "AKIAJZ4XMOZRUPAADOOA", secret: "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")
     
     
     func saveImageToS3(image: UIImage) {
         
-        s3Manager.requestSerializer.bucket = "frontwhalesos"
+        s3Manager.requestSerializer.bucket = "guesswhatteamproject"
         s3Manager.requestSerializer.region = AFAmazonS3USStandardRegion
         
         let timestamp = Int(NSDate().timeIntervalSince1970)
@@ -75,6 +75,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             let filePath = documentPath.stringByAppendingPathComponent(imageName + ".png")
             
             println(filePath)
+            
+            let newImage = image.resizingMode
+            
             
             imageData.writeToFile(filePath, atomically: false)
             
