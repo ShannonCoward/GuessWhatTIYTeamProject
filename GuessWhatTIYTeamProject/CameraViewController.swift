@@ -3,55 +3,36 @@
 //  GuessWhatTIYTeamProject
 //
 //  Created by Shannon Armon on 6/17/15.
-//  Copyright (c) 2015 Shannon Armon. All rights reserved.
+//   Copyright (c) 2015 Shannon Armon. All rights reserved.
 //
 
 import UIKit
-//import MobileCoreServices
+import AmazonS3RequestManager
 import AFNetworking
 import AFAmazonS3Manager
 
 
-
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var imagePickerController = UIImagePickerController()
+    var imagePicker = UIImagePickerController()
     
-    
-    @IBAction func takePicture(sender: UIButton) {
-        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imagePicker.delegate = self
+        imagePicker.sourceType = .Camera
+        
+        dispatch_after(DISPATCH_TIME_NOW + NSEC_PER_MSEC * 5, dispatch_get_main_queue()) { () -> Void in
             
-            imagePickerController.delegate = self
-            imagePickerController.sourceType = UIImagePickerControllerSourceType.Camera
+            self.presentViewController(self.imagePicker, animated: true, completion: nil)
             
-            dispatch_after(DISPATCH_TIME_NOW + NSEC_PER_SEC * 20, dispatch_get_main_queue()) { () -> Void in
-                
-                
-                self.presentViewController(self.imagePickerController, animated: true, completion: nil)
-                
-            }
-            
-            imagePickerController.mediaTypes = [kUTTypeImage]
-            imagePickerController.allowsEditing = true
-            self.presentViewController(imagePickerController, animated: true, completion: nil)
-            
-        } else {
-            
-            
-            println("No Camera.")
             
         }
-        
-        
-        
-        
         
     }
     
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        
-        var picker = UIImagePickerController()
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
@@ -59,32 +40,35 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             
         }
         
-        
-        picker.dismissViewControllerAnimated (true, completion:nil)
+        picker.dismissViewControllerAnimated(true, completion: nil)
         
     }
     
-//    var bucketName = ""
-//    var bucketRegion = ""
-    
-//    let amazonS3Manager = AmazonS3RequestManager(bucket: "BucketName",
-//        region: .USStandard,
-//        accessKey: "",
-//        secret: "")
-    
-    let s3Manager = AFAmazonS3Manager(accessKeyID: "", secret: "")
     
     
+    //    let amazonS3Manager = AmazonS3RequestManager(bucket: "",
+    //        region: .USStandard,
+    //        accessKey: "",
+    //        secret: "")
     
-    func saveImageToS3(image: UIImage){
+    let s3Manager = AFAmazonS3Manager(accessKeyID: "AKIAIHUPEUNXKX7YARKA", secret: "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")
+    
+    
+    func saveImageToS3(image: UIImage) {
         
-        let timestamp = NSDate().timeIntervalSince1970
+        s3Manager.requestSerializer.bucket = "frontwhalesos"
+        s3Manager.requestSerializer.region = AFAmazonS3USStandardRegion
+        
+        let timestamp = Int(NSDate().timeIntervalSince1970)
         
         let imageName = "myImage_\(timestamp)"
         
         let imageData = UIImagePNGRepresentation(image)
         
-        //         amazonS3Manager.putObject(imageData, destinationPath: imageName + ".png", acl: nil)
+        println(image)
+        
+        //        amazonS3Manager.putObject(imageData, destinationPath: imageName + ".png", acl: nil)
+        
         
         if let documentPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).first as? String {
             
@@ -93,55 +77,34 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             println(filePath)
             
             imageData.writeToFile(filePath, atomically: false)
+            
             let fileURL = NSURL(fileURLWithPath: filePath)
             
-//            amazonS3Manager.putObject(fileURL!, destinationPath: imageName + ".png", acl: AmazonS3PredefinedACL.Public)
+            //            amazonS3Manager.putObject(fileURL!, destinationPath: imageName + ".png", acl: AmazonS3PredefinedACL.Public)
             
-            s3Manager.postObjectWithFile(filePath, destinationPath: imageName + ".png", parameters: nil, progress: { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
+            s3Manager.putObjectWithFile(filePath, destinationPath: imageName + ".png", parameters: nil, progress: { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
+                
                 
                 let percentageWritten = (CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)) * 100.0
                 
-                    println("upladed \(percentageWritten)%")
+                println("Uploaded \(percentageWritten)%")
                 
-            }, success: { (responseObject) -> Void in
                 
-                    println("\(responseObject)")
-                
-            }, failure: { (error) -> Void in
-                
+                }, success: { (responseObject) -> Void in
+                    
+                    let info = responseObject as! AFAmazonS3ResponseObject
+                    
+                    
+                    println("\(info.URL)")
+                    
+                }, failure: { (error) -> Void in
+                    
                     println("\(error)")
+                    
             })
             
         }
         
     }
-    
-    
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }

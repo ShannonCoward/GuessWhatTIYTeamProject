@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410FCB71B3359A300801191 /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410FCB61B3359A200801191 /* RailsRequest.swift */; };
 		049AF2631B331E4D001FA3B1 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049AF2621B331E4D001FA3B1 /* FancyButton.swift */; };
 		04A817E01B31E3FD007861AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817DF1B31E3FD007861AA /* AppDelegate.swift */; };
 		04A817E21B31E3FD007861AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817E11B31E3FD007861AA /* FirstViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0410FCB61B3359A200801191 /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
 		049AF2621B331E4D001FA3B1 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		049AF2641B332111001FA3B1 /* GuessWhatTIYTeamProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuessWhatTIYTeamProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		04A817DA1B31E3FD007861AA /* GuessWhatTIYTeamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWhatTIYTeamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 			children = (
 				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
 				04A817FF1B31FBC0007861AA /* LoginViewController.swift */,
+				0410FCB61B3359A200801191 /* RailsRequest.swift */,
 				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
 				049AF2621B331E4D001FA3B1 /* FancyButton.swift */,
 				04A818091B3280B9007861AA /* PictureButton.swift */,
@@ -211,6 +214,7 @@
 				TargetAttributes = {
 					04A817D91B31E3FD007861AA = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YUM7RTQH92;
 					};
 					04A817EE1B31E3FE007861AA = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -313,6 +317,7 @@
 			files = (
 				04A818061B322A69007861AA /* ViewController.swift in Sources */,
 				049AF2631B331E4D001FA3B1 /* FancyButton.swift in Sources */,
+				0410FCB71B3359A300801191 /* RailsRequest.swift in Sources */,
 				04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */,
 				04A818041B321E0E007861AA /* CameraViewController.swift in Sources */,
 				04A8180A1B3280B9007861AA /* PictureButton.swift in Sources */,
@@ -447,9 +452,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GuessWhatTIYTeamProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuessWhatTIYTeamProject/GuessWhatTIYTeamProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -461,9 +469,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GuessWhatTIYTeamProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuessWhatTIYTeamProject/GuessWhatTIYTeamProject-Bridging-Header.h";
 			};
 			name = Release;

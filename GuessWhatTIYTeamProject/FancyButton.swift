@@ -8,14 +8,29 @@
 
 import UIKit
 
-class FancyButton: UIButton {
+@IBDesignable class FancyButton: UIButton {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    @IBInspectable var cornerRadius: CGFloat = 10
+    @IBInspectable var buttonColor: UIColor = UIColor.clearColor()
+   
+    
     override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+        
+        let context = UIGraphicsGetCurrentContext()
+        let insetRect = CGRectInset(rect, 10, 10)
+        let path = UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius)
+        CGContextFillPath(context)
+        let insetPath = UIBezierPath(roundedRect: insetRect, cornerRadius: cornerRadius)
+        
+        buttonColor.set()
+        
+        CGContextAddPath(context, path.CGPath)
+        CGContextFillPath(context)
+        
 
+        CGContextAddPath(context, insetPath.CGPath)
+        CGContextStrokePath(context)
+        
+    }
+    
 }
