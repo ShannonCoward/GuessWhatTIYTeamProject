@@ -15,7 +15,6 @@
 		04A817E71B31E3FD007861AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A817E61B31E3FD007861AA /* Images.xcassets */; };
 		04A817EA1B31E3FE007861AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A817E81B31E3FE007861AA /* LaunchScreen.xib */; };
 		04A817F61B31E3FE007861AA /* GuessWhatTIYTeamProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817F51B31E3FE007861AA /* GuessWhatTIYTeamProjectTests.swift */; };
-		04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817FF1B31FBC0007861AA /* LoginViewController.swift */; };
 		04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818011B31FBD8007861AA /* RegisterViewController.swift */; };
 		04A818041B321E0E007861AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818031B321E0E007861AA /* CameraViewController.swift */; };
 		04A818061B322A69007861AA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818051B322A69007861AA /* PostViewController.swift */; };
@@ -24,6 +23,7 @@
 		04DC06EE1B34A98D00D7814A /* GameHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06ED1B34A98D00D7814A /* GameHomeViewController.swift */; };
 		04DC06F01B34FA4100D7814A /* FancyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06EF1B34FA4100D7814A /* FancyLabel.swift */; };
 		04DC06F21B35DC1900D7814A /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06F11B35DC1900D7814A /* GameOverViewController.swift */; };
+		04DC06F81B35F6D200D7814A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06F71B35F6D200D7814A /* LoginViewController.swift */; };
 		04DE4A721B33097600C9F376 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 04DE4A711B33097600C9F376 /* PodFile */; };
 		B0B42DCCC98D09E1061A50FD /* Pods_GuessWhatTIYTeamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B243687F67F114B9C6AE6BF /* Pods_GuessWhatTIYTeamProject.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -52,7 +52,6 @@
 		04A817EF1B31E3FE007861AA /* GuessWhatTIYTeamProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessWhatTIYTeamProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A817F41B31E3FE007861AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A817F51B31E3FE007861AA /* GuessWhatTIYTeamProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWhatTIYTeamProjectTests.swift; sourceTree = "<group>"; };
-		04A817FF1B31FBC0007861AA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04A818011B31FBD8007861AA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		04A818031B321E0E007861AA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		04A818051B322A69007861AA /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		04DC06ED1B34A98D00D7814A /* GameHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHomeViewController.swift; sourceTree = "<group>"; };
 		04DC06EF1B34FA4100D7814A /* FancyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyLabel.swift; sourceTree = "<group>"; };
 		04DC06F11B35DC1900D7814A /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		04DC06F71B35F6D200D7814A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04DE4A711B33097600C9F376 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		5B69E89DD61402F1C6D415E1 /* Pods-GuessWhatTIYTeamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhatTIYTeamProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuessWhatTIYTeamProject/Pods-GuessWhatTIYTeamProject.release.xcconfig"; sourceTree = "<group>"; };
 		6CF04B3520E8599575B5A31E /* Pods-GuessWhatTIYTeamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhatTIYTeamProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuessWhatTIYTeamProject/Pods-GuessWhatTIYTeamProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,15 +110,10 @@
 		04A817DC1B31E3FD007861AA /* GuessWhatTIYTeamProject */ = {
 			isa = PBXGroup;
 			children = (
-				0410FCB61B3359A200801191 /* RailsRequest.swift */,
-				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
-				04DC06ED1B34A98D00D7814A /* GameHomeViewController.swift */,
-				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
-				04A817FF1B31FBC0007861AA /* LoginViewController.swift */,
-				04A818031B321E0E007861AA /* CameraViewController.swift */,
-				04DC06F11B35DC1900D7814A /* GameOverViewController.swift */,
-				04DC06E41B344F4700D7814A /* GuessViewController.swift */,
-				04A818051B322A69007861AA /* PostViewController.swift */,
+				04DC06F41B35F34800D7814A /* API */,
+				04DC06F61B35F39900D7814A /* Game VCs */,
+				04DC06F51B35F35C00D7814A /* Main Screen and Photos */,
+				04DC06F31B35F33100D7814A /* Login/Register */,
 				04A817E31B31E3FD007861AA /* Main.storyboard */,
 				04A817E61B31E3FD007861AA /* Images.xcassets */,
 				04A817E81B31E3FE007861AA /* LaunchScreen.xib */,
@@ -155,6 +150,43 @@
 				04A817F41B31E3FE007861AA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DC06F31B35F33100D7814A /* Login/Register */ = {
+			isa = PBXGroup;
+			children = (
+				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
+				04DC06F71B35F6D200D7814A /* LoginViewController.swift */,
+				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
+			);
+			name = Login/Register;
+			sourceTree = "<group>";
+		};
+		04DC06F41B35F34800D7814A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0410FCB61B3359A200801191 /* RailsRequest.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		04DC06F51B35F35C00D7814A /* Main Screen and Photos */ = {
+			isa = PBXGroup;
+			children = (
+				04DC06ED1B34A98D00D7814A /* GameHomeViewController.swift */,
+				04A818031B321E0E007861AA /* CameraViewController.swift */,
+				04A818051B322A69007861AA /* PostViewController.swift */,
+				04DC06E41B344F4700D7814A /* GuessViewController.swift */,
+			);
+			name = "Main Screen and Photos";
+			sourceTree = "<group>";
+		};
+		04DC06F61B35F39900D7814A /* Game VCs */ = {
+			isa = PBXGroup;
+			children = (
+				04DC06F11B35DC1900D7814A /* GameOverViewController.swift */,
+			);
+			name = "Game VCs";
 			sourceTree = "<group>";
 		};
 		B28FCF563DCB4B57C267AA67 /* Pods */ = {
@@ -328,10 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DC06F81B35F6D200D7814A /* LoginViewController.swift in Sources */,
 				04A818061B322A69007861AA /* PostViewController.swift in Sources */,
 				049AF2631B331E4D001FA3B1 /* FancyButton.swift in Sources */,
 				0410FCB71B3359A300801191 /* RailsRequest.swift in Sources */,
-				04A818001B31FBC0007861AA /* LoginViewController.swift in Sources */,
 				04A818041B321E0E007861AA /* CameraViewController.swift in Sources */,
 				04DC06EE1B34A98D00D7814A /* GameHomeViewController.swift in Sources */,
 				04A817E21B31E3FD007861AA /* FirstViewController.swift in Sources */,

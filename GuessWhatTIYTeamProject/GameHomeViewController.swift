@@ -10,6 +10,28 @@ import UIKit
 
 class GameHomeViewController: UIViewController {
 
+    
+    
+    @IBAction func playGameButton(sender: UIButton) {
+        // Optional, play the game screen
+        
+    }
+    
+    
+    @IBAction func creatAPhotoButon(sender: UIButton) {
+        
+        let getCameraVC = storyboard?.instantiateViewControllerWithIdentifier("getCameraVC") as! CameraViewController
+        
+        self.navigationController?.pushViewController(getCameraVC, animated: true)
+    
+    }
+    
+    
+    
+    @IBAction func leaderBoardButton(sender: UIButton) {
+        // Optional, leader board screen
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -36,21 +36,29 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
         
     func submitButtonPressed() {
+        // Login to servers
             
         RailsRequest.session().username = usernameTextField!.text
         RailsRequest.session().password = passwordTextField!.text
         
         RailsRequest.session().login { () -> Void in
             
-            self.goBackToStartScreen()
+            self.goToMainScreen()
         
         }
     }
     
-    func goBackToStartScreen() {
+    func goToMainScreen() {
         
-        println("go back to start screen")
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        println("Go to main screen")
+        
+        if RailsRequest.session().userInfo != nil {
+        
+            let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! GameHomeViewController
+            
+            self.navigationController?.pushViewController(mainMenuVC, animated: true)
+            
+        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -65,10 +73,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -76,6 +80,5 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

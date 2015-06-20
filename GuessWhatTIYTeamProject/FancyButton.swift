@@ -12,6 +12,7 @@ import UIKit
 
     @IBInspectable var cornerRadius: CGFloat = 10
     @IBInspectable var buttonColor: UIColor = UIColor.clearColor()
+    @IBInspectable var lineThickness: CGFloat = 0
    
     
     override func drawRect(rect: CGRect) {

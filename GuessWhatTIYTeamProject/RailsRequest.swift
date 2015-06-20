@@ -41,6 +41,9 @@ class RailsRequest: NSObject {
     var firstName: String?
     var lastName: String?
     
+    // If successful login or registration, this is filled
+    var userInfo: [String:AnyObject]?
+    
     func registerCompletion(completion: () -> Void) {
     
         var info =  [
@@ -96,6 +99,14 @@ class RailsRequest: NSObject {
         requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
             
             println("Login Completion Response 2: \(responseInfo)")
+            
+            if let userInfo = responseInfo?["user"] as? [String:AnyObject] {
+                
+                self.userInfo = userInfo
+                
+                completion()
+            
+            }
             
             if let accessToken = responseInfo?["access_token"] as? String {
                 

@@ -36,6 +36,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
+            self.URL.absoluteString
+            
             saveImageToS3(image)
             
         }
@@ -77,6 +79,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             println(filePath)
             
             let newImage = image.resizingMode
+            
             
             
             imageData.writeToFile(filePath, atomically: false)
