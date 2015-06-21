@@ -41,6 +41,14 @@ class RailsRequest: NSObject {
     var firstName: String?
     var lastName: String?
     
+    var guesses: String?
+    
+    var image: String?
+    var answer: String?
+    var answer_1: String?
+    var answer_2: String?
+    var answer_3: String?
+    
     // If successful login or registration, this is filled
     var userInfo: [String:AnyObject]?
     
@@ -122,6 +130,26 @@ class RailsRequest: NSObject {
         
     }
     
+    func createPost() {
+        
+        var info = [
+        
+            "method" : "POST",
+            "endpoint" : "/posts/",
+            "parameters" : [
+                
+                "image" : image!,
+                "answer" : answer!,
+                "answer_1" : answer_1!,
+                "answer_2" : answer_2!,
+                "answer_3" : answer_3!
+            ]
+        
+        ]
+    
+    
+    }
+    
     func postImage() {
         
         var info =  [
@@ -143,6 +171,73 @@ class RailsRequest: NSObject {
         })
     
     }
+    
+    func createAGuess() {
+    
+        var info = [
+        
+            "method" : "POST",
+            "endpoint" : "posts/:id/guesses"
+        ]
+    
+    }
+    
+    
+    func postGuess() {
+    
+        var info = [
+            
+            "method" : "POST",
+            "endpoint" : "posts/:id/guesses",
+            "parameters" : [
+                
+                "guess": guesses!
+            ]
+        
+        ]
+    
+    }
+    
+    func getAllUsers() {
+    
+        var info = [
+            
+        "method": "GET",
+        "endpoint" : "/users"
+    ]
+    }
+    
+    func acquireScoreBoard() {
+    
+        var info = [
+    
+    "method" : "GET",
+    "endpoint" : "/scoreboard"
+    
+    ]
+    
+    }
+    
+    func acquireAllPosts() {
+    
+        var info = [
+        
+            "method" : "GET",
+            "endpoint" : "/posts"
+        
+        ]
+    }
+    
+    func showPost () {
+    
+        var info = [
+        
+            "method" : "GET",
+            "method" : "/posts/:id"
+        
+        ]
+    }
+    
     
     
     func requestWithInfo(info: [String:AnyObject], andCompletion completion: ((responseInfo: [String:AnyObject]?) ->Void)?) {

@@ -540,31 +540,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTU-Fn-ZOo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTU-Fn-ZOo">
                                 <rect key="frame" x="40" y="28" width="521" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="fJR-pf-89T"/>
+                                    <constraint firstAttribute="width" constant="521" id="xgf-0f-grV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ExtraBlur" family="ExtraBlur" pointSize="47"/>
                                 <color key="textColor" red="0.32156862749999998" green="0.65098039220000004" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-BQ-9cL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-BQ-9cL">
                                 <rect key="frame" x="216" y="260" width="169" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="acH-EL-ZRX"/>
+                                    <constraint firstAttribute="width" constant="169" id="yEx-Vc-UDp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leader Board" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-9n-9Yo">
-                                <rect key="frame" x="11" y="354" width="573" height="226"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leader Board" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-9n-9Yo">
+                                <rect key="frame" x="14" y="354" width="573" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="226" id="NK6-JC-d1h"/>
+                                    <constraint firstAttribute="width" constant="573" id="TYs-ug-5Io"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Qoc-9n-9Yo" secondAttribute="centerX" id="15r-Te-f73"/>
+                            <constraint firstItem="uTU-Fn-ZOo" firstAttribute="top" secondItem="R2i-g8-fEh" secondAttribute="bottom" constant="8" id="JLI-jJ-rjv"/>
+                            <constraint firstItem="o1H-dy-XM6" firstAttribute="top" secondItem="Qoc-9n-9Yo" secondAttribute="bottom" constant="20" id="QJS-Iy-njb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uTU-Fn-ZOo" secondAttribute="trailing" constant="23" id="RN4-iB-qW5"/>
+                            <constraint firstAttribute="centerX" secondItem="iC9-BQ-9cL" secondAttribute="centerX" id="a9V-fr-quz"/>
+                            <constraint firstItem="Qoc-9n-9Yo" firstAttribute="top" secondItem="iC9-BQ-9cL" secondAttribute="bottom" constant="33" id="dgI-jc-gVh"/>
+                            <constraint firstItem="iC9-BQ-9cL" firstAttribute="top" secondItem="uTU-Fn-ZOo" secondAttribute="bottom" constant="75" id="mgh-ic-2fg"/>
+                            <constraint firstItem="uTU-Fn-ZOo" firstAttribute="leading" secondItem="nl4-2k-x10" secondAttribute="leadingMargin" constant="24" id="ndE-lb-eS9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V8-5e-NHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3640" y="1066"/>
+            <point key="canvasLocation" x="3650" y="1054"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kt1-TH-KHI">

@@ -36,7 +36,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
-            self.URL.absoluteString
             
             saveImageToS3(image)
             
