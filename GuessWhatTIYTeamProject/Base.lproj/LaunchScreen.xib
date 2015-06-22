@@ -16,11 +16,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peephole.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="piI-Vs-nuk">
-                    <rect key="frame" x="0.0" y="0.0" width="779" height="480"/>
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="779" id="9rD-0I-U3I"/>
                         <constraint firstAttribute="height" constant="480" id="IfK-y9-URx"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9rD-0I-U3I"/>
+                            <exclude reference="IfK-y9-URx"/>
+                        </mask>
+                    </variation>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUESS WHAT?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDk-bx-Rwi">
                     <rect key="frame" x="95" y="60" width="291" height="88"/>
@@ -38,7 +44,7 @@
                 <constraint firstAttribute="centerX" secondItem="PDk-bx-Rwi" secondAttribute="centerX" id="3Sy-f0-o40"/>
                 <constraint firstItem="piI-Vs-nuk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Arm-CA-T7u"/>
                 <constraint firstItem="PDk-bx-Rwi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="V7T-oQ-2da"/>
-                <constraint firstAttribute="trailing" secondItem="piI-Vs-nuk" secondAttribute="trailing" constant="-299" id="Xyr-pv-uSH"/>
+                <constraint firstAttribute="trailing" secondItem="piI-Vs-nuk" secondAttribute="trailing" id="Xyr-pv-uSH"/>
                 <constraint firstItem="piI-Vs-nuk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="adi-FP-0g3"/>
                 <constraint firstAttribute="bottom" secondItem="piI-Vs-nuk" secondAttribute="bottom" id="cp8-Wn-Hdv"/>
             </constraints>

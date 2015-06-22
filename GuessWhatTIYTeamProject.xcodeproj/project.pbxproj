@@ -138,6 +138,7 @@
 			children = (
 				04DC06EB1B34632900D7814A /* ExtraBlur.ttf */,
 				04E1E63A1B378B93000EB99E /* peephole.jpg */,
+				04E1E63E1B37957D000EB99E /* Penelope Anne.ttf */,
 				049AF2621B331E4D001FA3B1 /* FancyButton.swift */,
 				04E1E63F1B37A620000EB99E /* GuessWhatBackground.png */,
 				04DC06EF1B34FA4100D7814A /* FancyLabel.swift */,
@@ -171,7 +172,6 @@
 				04A818011B31FBD8007861AA /* RegisterViewController.swift */,
 				04DC06F71B35F6D200D7814A /* LoginViewController.swift */,
 				04A817E11B31E3FD007861AA /* FirstViewController.swift */,
-				04E1E63E1B37957D000EB99E /* Penelope Anne.ttf */,
 			);
 			name = Login/Register;
 			sourceTree = "<group>";

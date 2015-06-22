@@ -158,18 +158,6 @@ class RailsRequest: NSObject {
             
             println("Create Post Completion Response 3: \(responseInfo)")
             
-            if let userInfo = responseInfo?["user"] as? [String:AnyObject] {
-                
-                self.userInfo = userInfo
-                
-                if let accessToken = userInfo["access_token"] as? String {
-                    
-                    self.token = accessToken
-                    
-                    completion()
-                }
-                
-            }
             
         })
         
@@ -182,7 +170,7 @@ class RailsRequest: NSObject {
         var info =  [
             
             "method" : "POST",
-            "endpoint" : "/posts/",
+            "endpoint" : "/posts",
             "parameters" : [
                 
                 "username": username!,
@@ -245,7 +233,7 @@ class RailsRequest: NSObject {
     
     }
     
-    func acquireAllPosts() {
+    func getAllPosts() {
     
         var info = [
         
@@ -271,6 +259,8 @@ class RailsRequest: NSObject {
         
         println("Inside RailsRequest 1")
         
+        println(info)
+        
         let endpoint = info["endpoint"] as! String
         if let url = NSURL(string: API_URL + endpoint) {
         
@@ -282,33 +272,35 @@ class RailsRequest: NSObject {
                 
                 println("Inside RailsRequest 2")
             
-                request.setValue(RailsRequest.session().token!, forHTTPHeaderField: "Authorization")
+                request.setValue(RailsRequest.session().token!, forHTTPHeaderField: "Access-Token")
             
             }
             
             ////BODY
             
-            let bodyInfo = info["parameters"] as! [String:AnyObject]
-            
-            let requestData = NSJSONSerialization.dataWithJSONObject(bodyInfo, options: NSJSONWritingOptions.allZeros, error: nil)
-            
-            let jsonString = NSString(data: requestData!, encoding: NSUTF8StringEncoding)
-            
-            let postLength = "\(jsonString!.length)"
-            
-            request.setValue(postLength, forHTTPHeaderField: "Content-Length")
-            
-            let postData = jsonString?.dataUsingEncoding(NSASCIIStringEncoding, allowLossyConversion: true)
-            
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            
-            request.HTTPBody = postData
+            if let bodyInfo = info["parameters"] as? [String:AnyObject] {
+                
+                let requestData = NSJSONSerialization.dataWithJSONObject(bodyInfo, options: NSJSONWritingOptions.allZeros, error: nil)
+                
+                let jsonString = NSString(data: requestData!, encoding: NSUTF8StringEncoding)
+                
+                let postLength = "\(jsonString!.length)"
+                
+                request.setValue(postLength, forHTTPHeaderField: "Content-Length")
+                
+                let postData = jsonString?.dataUsingEncoding(NSASCIIStringEncoding, allowLossyConversion: true)
+                
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                
+                request.HTTPBody = postData
+                
+            }
             
             /////Body
             
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { (response, data, error) -> Void in
                 
-                if let json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: nil) as? [String:AnyObject]{
+                if let json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: nil) as? [String:AnyObject] {
                 
                     completion?(responseInfo: json)
                     
