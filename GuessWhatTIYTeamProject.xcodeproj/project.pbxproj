@@ -18,6 +18,7 @@
 		04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818011B31FBD8007861AA /* RegisterViewController.swift */; };
 		04A818041B321E0E007861AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818031B321E0E007861AA /* CameraViewController.swift */; };
 		04A818061B322A69007861AA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A818051B322A69007861AA /* PostViewController.swift */; };
+		04D53E011B38437400D0BCEA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D53E001B38437400D0BCEA /* Keys.swift */; };
 		04DC06E51B344F4700D7814A /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06E41B344F4700D7814A /* GuessViewController.swift */; };
 		04DC06EC1B34632900D7814A /* ExtraBlur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DC06EB1B34632900D7814A /* ExtraBlur.ttf */; };
 		04DC06EE1B34A98D00D7814A /* GameHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC06ED1B34A98D00D7814A /* GameHomeViewController.swift */; };
@@ -59,6 +60,7 @@
 		04A818011B31FBD8007861AA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		04A818031B321E0E007861AA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		04A818051B322A69007861AA /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		04D53E001B38437400D0BCEA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		04DC06E41B344F4700D7814A /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 		04DC06EB1B34632900D7814A /* ExtraBlur.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExtraBlur.ttf; sourceTree = "<group>"; };
 		04DC06ED1B34A98D00D7814A /* GameHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHomeViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				04DC06EF1B34FA4100D7814A /* FancyLabel.swift */,
 				04A817DF1B31E3FD007861AA /* AppDelegate.swift */,
 				04A817DE1B31E3FD007861AA /* Info.plist */,
+				04D53E001B38437400D0BCEA /* Keys.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				04DC06E51B344F4700D7814A /* GuessViewController.swift in Sources */,
 				04DC06F21B35DC1900D7814A /* GameOverViewController.swift in Sources */,
 				04A817E01B31E3FD007861AA /* AppDelegate.swift in Sources */,
+				04D53E011B38437400D0BCEA /* Keys.swift in Sources */,
 				04DC06F01B34FA4100D7814A /* FancyLabel.swift in Sources */,
 				04A818021B31FBD8007861AA /* RegisterViewController.swift in Sources */,
 			);

@@ -73,12 +73,14 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     //        accessKey: "",
     //        secret: "")
     
-    let s3Manager = AFAmazonS3Manager(accessKeyID: "", secret: "")
+  
+    
+    let s3Manager = AFAmazonS3Manager(accessKeyID: accessKey, secret: secret)
     
     
     func saveImageToS3(image: UIImage) {
         
-        s3Manager.requestSerializer.bucket = "guesswhatteamproject"
+        s3Manager.requestSerializer.bucket = bucket
         s3Manager.requestSerializer.region = AFAmazonS3USStandardRegion
         
         let timestamp = Int(NSDate().timeIntervalSince1970)
