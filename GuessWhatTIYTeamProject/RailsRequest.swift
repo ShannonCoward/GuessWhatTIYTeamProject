@@ -112,30 +112,37 @@ class RailsRequest: NSObject {
                 
                 self.userInfo = userInfo
                 
-                completion()
+                if let accessToken = userInfo["access_token"] as? String {
+                    
+                    println("Test 123: \(accessToken)")
+                    
+                    self.token = accessToken
+                    
+                    completion()
+                }
             
             }
             
-            if let accessToken = responseInfo?["access_token"] as? String {
-                
-                self.token = accessToken
-                
-                completion()
-                
-            }
-            
+//            if let accessToken = responseInfo?["access_token"] as? String {
+//                
+//                self.token = accessToken
+//                
+//                completion()
+//                
+//            }
+//            
         })
         
         completion()
         
     }
     
-    func createPost() {
+    func createPost(completion: () -> Void) {
         
         var info = [
         
             "method" : "POST",
-            "endpoint" : "/posts/",
+            "endpoint" : "/posts",
             "parameters" : [
                 
                 "image" : image!,
@@ -145,9 +152,29 @@ class RailsRequest: NSObject {
                 "answer_3" : answer_3!
             ]
         
-        ]
+        ] as [String:AnyObject]
     
-    
+        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
+            
+            println("Create Post Completion Response 3: \(responseInfo)")
+            
+            if let userInfo = responseInfo?["user"] as? [String:AnyObject] {
+                
+                self.userInfo = userInfo
+                
+                if let accessToken = userInfo["access_token"] as? String {
+                    
+                    self.token = accessToken
+                    
+                    completion()
+                }
+                
+            }
+            
+        })
+        
+        completion()
+        
     }
     
     func postImage() {
@@ -251,9 +278,11 @@ class RailsRequest: NSObject {
             
             request.HTTPMethod = info["method"] as! String
             
-            if let token = token {
+            if RailsRequest.session().token != nil {
+                
+                println("Inside RailsRequest 2")
             
-                request.setValue(token, forHTTPHeaderField: "Authorization")
+                request.setValue(RailsRequest.session().token!, forHTTPHeaderField: "Authorization")
             
             }
             

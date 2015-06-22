@@ -9,6 +9,12 @@
 import UIKit
 
 class GameOverViewController: UIViewController {
+    
+    
+    @IBOutlet weak var yourScore: UILabel!
+    
+    
+    @IBOutlet weak var leaderBoardLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

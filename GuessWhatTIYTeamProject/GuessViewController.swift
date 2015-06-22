@@ -9,6 +9,13 @@
 import UIKit
 
 class GuessViewController: UIViewController {
+    
+    @IBOutlet weak var pointsLabel: UILabel!
+    
+    @IBAction func makeAGuessButton(sender: UIButton) {
+    }
+    
+    @IBOutlet weak var gamePhotoView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -36,12 +36,33 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
+            let newImage = RBResizeImage(image, CGSizeMake(400, 550))
             
-            saveImageToS3(image)
+//            var imageManipulation = ImageManipulation()
+//            let newImage = imageManipulation.imageResizeTo(imagePhoto, size: CGSizeMake(170, 250))
+//
+//            picker.dismissViewControllerAnimated(true, completion: nil)
+
+            picker.dismissViewControllerAnimated(true, completion: { () -> Void in
+                
+                self.saveImageToS3(newImage)
+                
+                var postVC = self.storyboard?.instantiateViewControllerWithIdentifier("PostVC") as! PostViewController
+                
+                self.navigationController?.pushViewController(postVC, animated: true)
+            })
+            
+//            var postVC = storyboard?.instantiateViewControllerWithIdentifier("PostVC") as! PostViewController
+            
+//            println(picker.navigationController?.viewControllers)
+//            println("Another test \(self.navigationController?.viewControllers)")
+            
+//            self.navigationController?.pushViewController(postVC, animated: true)
+            
+//            saveImageToS3(newImage)
             
         }
-        
-        picker.dismissViewControllerAnimated(true, completion: nil)
+
         
     }
     
@@ -52,7 +73,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     //        accessKey: "",
     //        secret: "")
     
-    let s3Manager = AFAmazonS3Manager(accessKeyID: "AKIAJZ4XMOZRUPAADOOA", secret: "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")
+    let s3Manager = AFAmazonS3Manager(accessKeyID: "", secret: "")
     
     
     func saveImageToS3(image: UIImage) {
@@ -63,6 +84,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let timestamp = Int(NSDate().timeIntervalSince1970)
         
         let imageName = "myImage_\(timestamp)"
+        
+        let resizedImage = UIImage()
+        
         
         let imageData = UIImagePNGRepresentation(image)
         
@@ -77,7 +101,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             
             println(filePath)
             
-            let newImage = image.resizingMode
+            
             
             
             
@@ -101,6 +125,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                     
                     
                     println("\(info.URL)")
+                    
+                    RailsRequest.session().image = "\(info.URL)"
                     
                 }, failure: { (error) -> Void in
                     
