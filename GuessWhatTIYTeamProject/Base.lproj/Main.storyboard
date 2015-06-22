@@ -610,15 +610,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GuessWhatBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="yaz-T1-uC9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="607"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HmB-4b-PpB">
-                                <rect key="frame" x="90" y="70" width="421" height="279"/>
+                                <rect key="frame" x="90" y="20" width="421" height="279"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="279" id="Gss-FF-UzV"/>
                                     <constraint firstAttribute="width" constant="421" id="oWX-jH-Rbl"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What Is The Photo?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uwB-Zk-Gad">
-                                <rect key="frame" x="112" y="459" width="377" height="30"/>
+                                <rect key="frame" x="112" y="319" width="377" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="377" id="BrT-OS-Neu"/>
                                     <constraint firstAttribute="height" constant="30" id="SMa-zk-e7E"/>
@@ -627,7 +630,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idE-eS-ty9" customClass="FancyButton" customModule="GuessWhatTIYTeamProject" customModuleProvider="target">
-                                <rect key="frame" x="16" y="518" width="568" height="46"/>
+                                <rect key="frame" x="16" y="362" width="568" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4M0-2y-Z4w"/>
                                     <constraint firstAttribute="width" constant="568" id="Yof-q7-PO8"/>
@@ -642,7 +645,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="makeAGuessButton:" destination="2Yd-hG-L6z" eventType="touchUpInside" id="5il-ID-hso"/>
+                                    <action selector="tryAGuess:" destination="2Yd-hG-L6z" eventType="touchUpInside" id="v67-fP-my2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -651,13 +654,14 @@
                             <constraint firstAttribute="centerX" secondItem="HmB-4b-PpB" secondAttribute="centerX" id="L9T-QQ-OIb"/>
                             <constraint firstAttribute="centerX" secondItem="uwB-Zk-Gad" secondAttribute="centerX" id="dzm-7f-e1N"/>
                             <constraint firstAttribute="centerX" secondItem="idE-eS-ty9" secondAttribute="centerX" id="f76-qt-Vjb"/>
-                            <constraint firstItem="oed-Dt-3gy" firstAttribute="top" secondItem="idE-eS-ty9" secondAttribute="bottom" constant="36" id="jHa-jd-0f4"/>
-                            <constraint firstItem="idE-eS-ty9" firstAttribute="top" secondItem="uwB-Zk-Gad" secondAttribute="bottom" constant="29" id="l88-An-lxv"/>
-                            <constraint firstItem="uwB-Zk-Gad" firstAttribute="top" secondItem="HmB-4b-PpB" secondAttribute="bottom" constant="110" id="xsq-IY-NF0"/>
+                            <constraint firstItem="oed-Dt-3gy" firstAttribute="top" secondItem="idE-eS-ty9" secondAttribute="bottom" constant="192" id="jHa-jd-0f4"/>
+                            <constraint firstItem="idE-eS-ty9" firstAttribute="top" secondItem="uwB-Zk-Gad" secondAttribute="bottom" constant="13" id="l88-An-lxv"/>
+                            <constraint firstItem="uwB-Zk-Gad" firstAttribute="top" secondItem="HmB-4b-PpB" secondAttribute="bottom" constant="20" id="xsq-IY-NF0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="gamePhotoView" destination="HmB-4b-PpB" id="udO-gq-zVl"/>
+                        <outlet property="guessTextField" destination="uwB-Zk-Gad" id="Bsn-Sy-oAA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk5-Dp-zhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
